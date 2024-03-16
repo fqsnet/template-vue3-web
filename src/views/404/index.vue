@@ -19,8 +19,8 @@ const router = useRouter()
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
 
   .not-img {
     margin-right: 120px;
