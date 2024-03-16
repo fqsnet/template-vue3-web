@@ -1,0 +1,42 @@
+// 通用类
+
+.clearfix::after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+  visibility: hidden;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.2s;
+}
+
+.fade-transform-enter-from {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.2s;
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.2s;
+}
+
+@function vw($px) {
+  @return calc($px / 750) * 100vw;
+}
